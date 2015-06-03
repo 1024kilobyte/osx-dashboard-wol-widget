@@ -186,6 +186,16 @@ function setWindowSize() {
     window.resizeTo(windowWidth, windowHeight);
 }
 
+function getLocalizedString(key)
+{
+    try {
+        var ret = localizedStrings[key];
+        if (typeof ret !== "undefined") return ret;
+    } catch (ex) {}
+ 
+    return key;
+}
+
 /************************
 * Validate input values *
 *************************/
@@ -277,14 +287,4 @@ function isPortValid(newElementPort) {
     if (newPortNumber <= 0 || newPortNumber > 65535) return false;
     
     return true;
-}
-
-function getLocalizedString(key)
-{
-    try {
-        var ret = localizedStrings[key];
-        if (typeof ret !== "undefined") return ret;
-    } catch (ex) {}
- 
-    return key;
 }
