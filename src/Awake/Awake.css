@@ -1,0 +1,117 @@
+/*
+* Main structure
+*/
+
+body {
+    margin: 0;
+}
+
+#mainContainer {
+    display:block;
+}
+
+#elementContainer {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+    width: 175px;
+}
+
+/*
+* Basic elements - title, settings button, debug element
+*/
+
+.titleText {
+    font: 22px "Lucida Grande";
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+#editButton {
+    position:absolute;
+    top:12px;
+    right:10px;
+}
+
+/*
+* wol element
+*/
+
+.elementRow {
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.elementNameText {
+    font: 14px "Lucida Grande";
+    color: white;
+    white-space:nowrap;
+    padding-top: 2px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.elementWakeButton {
+    float: right;
+}
+
+.elementDeleteButton {
+    float: left;
+    width: 20px;
+    padding-right: 5px;
+}
+
+/*
+* Add element section
+*/
+
+#addElementContainer {
+    display: none;
+    position: absolute; 
+	bottom: 7px; 
+	left: 15px;
+    width: 175px;
+}
+
+.addElementTitle {
+    font: 12px "Lucida Grande";
+    font-weight: bold;
+    color: white;
+    padding-bottom: 8px;
+}
+
+.inputTextField {
+    width: 90px;
+}
+
+.inputTextFieldError {
+    width: 90px;
+    right: 0px;
+    border:2px solid red;
+}
+
+.inputFieldLabel {
+    display: inline-block;
+    font: 12px "Lucida Grande";
+    color: white;
+    width: 74px;    
+}
+
+.addButtonRow {
+    padding-top: 5px;    
+}
+
+.inputButton {
+    width: 96px;
+}
+
+hr {
+    height:1px;
+    border-width:0;
+    background-color:white;
+}

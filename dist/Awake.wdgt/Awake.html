@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="/System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="Awake.css">
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Awake.js" charset="utf-8"></script>
+</head>
+<body onload="setup();">
+<div id="mainContainer">
+    <img src="Default.png" />
+    <span class="titleText">Awake</span>
+    <div id="elementContainer"></div>
+    <div id="addElementContainer">
+        <hr></hr>
+        <div class="addElementTitle" id="newElementTitleDiv">Create new element</div>
+        <div><label class="inputFieldLabel" id="newElementNameInputLabel">Name</label><input class="inputTextField" type="text" id="newNameField" value="" /></div>
+        <div><label class="inputFieldLabel" id="newElementMACInputLabel">MAC</label><input class="inputTextField" type="text" id="newMACAddressField" value="" /></div>
+        <div><label class="inputFieldLabel" id="newElementSubnetInputLabel">Subnet</label><input class="inputTextField" type="text" id="newSubnetField" value="255.255.255.255" /></div>
+        <div><label class="inputFieldLabel" id="newElementPortInputLabel">Port</label><input class="inputTextField" type="text" id="newPortField" value="9" /></div>
+        <div class="addButtonRow"><div class="inputFieldLabel"></div><input class="inputButton" id="newElementAddButton" type="button" value="Add element" onclick="addNewElementClicked()" /></div>
+    </div>
+    <div id="editButton"></div>
+</div>
+</body>
+</html>
